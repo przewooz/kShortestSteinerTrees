@@ -1,0 +1,8 @@
+optimization\\mode
+binary_binary\\problem_type
+binary_steiner_tree_set\\evaluation_type
+ss046.txt\\evaluation_config_file_path
+dsmga2\\optimizer_type
+running_time\\stop_condition_type
+180\\stop_condition_time
+900\\population_size

@@ -1,0 +1,11 @@
+ss012\\file name
+dummy.txt\\summarize
+1\\func multiplier
+STEINER_TREE_SET_PROBLEM\\function type
+us26\ss.net\\net file
+us26\012.dmc\\dmc file
+1000\\tree number
+1\\intelligent tree build
+\\PROBLEM DEFINITION END
+random_search\\algorithm
+180\\max time
