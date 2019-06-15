@@ -1,0 +1,46 @@
+ff035\\file name
+dummy.txt\\summarize
+1\\func multiplier
+STEINER_TREE_SET_PROBLEM\\function type
+euro28\ff.net\\net file
+euro28\035.dmc\\dmc file
+1000\\tree number
+1\\intelligent tree build
+\\PROBLEM DEFINITION END
+muppets\\algorithm
+180\\max time
+0\\population size
+50000\\infected pop size
+0\\crossing
+0\\static crossing
+0\\crossing type//0-tournament size 2; 1-tournament size 2 + chance for tournament size 3 with difference-fitness
+0.000\\chance for size 3 diffrence fitness tournament//important ONLY for tournament type 1
+1\\glue infections
+1\\template fitness check
+7000\\pattern pool size
+0\\the same pattern check
+0\\preferred pattern length
+3\\minimal pattern length
+0\\length or entrophy at pattern number check
+1\\use templates at virus init
+0\\init viruses genes as opposite to competetive template
+1\\virus generations
+50\\virus population
+1.00000000\\virus population reduction
+0.05000000\\virus prob cut
+0.05000000\\virus prob splice
+0.07000000\\virus prob mutation
+0.07000000\\virus prob rem gene
+0.07000000\\virus prob add gene
+0\\virginity rounds (-1=until new CT is optimized 0,1,2 - highest number of virginity rounds)
+3\\min virus init length
+900\\max virus init length
+-1\\CT number strategy (positive-static number of CTs -1=classic -2=active -3=memo -4=total memo -5=total memo refresh)
+0\\fenoviruses (0-classic(OFF); 1-ON; 2-FULL FENO)
+0\\cut type (0-classic; 1-length independent)
+0\\genotype step optimization
+0\\pattern extract
+1\\ct crossing (1-on [classic]  0-off)
+0\\separate virus pettern and random init (0-off [classic]  1-on)
+0\\virus pure pattern init
+0\\add ct if best is not better
