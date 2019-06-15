@@ -1,9 +1,0 @@
-optimization\\mode
-binary_binary\\problem_type
-binary_steiner_tree_set\\evaluation_type
-ff039.txt\\evaluation_config_file_path
-ltga\\optimizer_type
-running_time\\stop_condition_type
-60\\stop_condition_time
-ltga_800_without_lo.cfg\\optimizer_config_file_path
-
