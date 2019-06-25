@@ -56,13 +56,13 @@ bool CP3::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)
 {
 	bool b_updated = CP3BasedOptimizer::bRunIteration(iIterationNumber, tStartTime);
 
-#ifdef EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
+#ifdef STEINER_TREE_SET_DYNAMIC
 	if (dynamic_cast<CBinarySteinerTreeSetDynamicEvaluation*>(pc_problem->pcGetEvaluation()))
 	{
 		CBinarySteinerTreeSetDynamicEvaluation *pc_steiner_tree_set = (CBinarySteinerTreeSetDynamicEvaluation*)pc_problem->pcGetEvaluation();
 		pc_steiner_tree_set->vChange();
 	}//if (dynamic_cast<CBinarySteinerTreeSetDynamicEvaluation*>(pc_problem->pcGetEvaluation()))
-#endif//EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
+#endif//STEINER_TREE_SET_DYNAMIC
 
 	if (b_with_feedback && RandUtils::bSatisfyProbability(f_feedback_probability))
 	{

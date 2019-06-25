@@ -27,7 +27,7 @@ bool CLTGA::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)
 {
 	bool b_updated = CP3BasedOptimizer::bRunIteration(iIterationNumber, tStartTime);
 
-#ifdef EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
+#ifdef STEINER_TREE_SET_DYNAMIC
 	if (dynamic_cast<CBinarySteinerTreeSetDynamicEvaluation*>(pc_problem->pcGetEvaluation()))
 	{
 		CBinarySteinerTreeSetDynamicEvaluation *pc_steiner_tree_set = (CBinarySteinerTreeSetDynamicEvaluation*)pc_problem->pcGetEvaluation();
@@ -40,7 +40,7 @@ bool CLTGA::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)
 			pc_recorder->evaluate(pc_ltga->pop.solutions.at(i));
 		}//for (size_t i = 0; i < pc_ltga->pop.solutions.size(); i++)
 	}//if (dynamic_cast<CBinarySteinerTreeSetDynamicEvaluation*>(pc_problem->pcGetEvaluation()))
-#endif//EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
+#endif//STEINER_TREE_SET_DYNAMIC
 
 	return b_updated;
 }//bool CLTGA::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)

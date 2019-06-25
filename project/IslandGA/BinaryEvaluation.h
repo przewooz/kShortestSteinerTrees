@@ -9,8 +9,6 @@
 
 #define EVALUATION_BINARY_NEAREST_NEIGHBOR_NK_ARGUMENT_K "evaluation_k"
 
-#define EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
-
 #include "BinaryCoding.h"
 #include "CompProblem.h"
 #include "Error.h"

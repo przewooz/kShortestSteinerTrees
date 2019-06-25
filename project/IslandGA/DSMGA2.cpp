@@ -64,7 +64,7 @@ bool CDSMGA2::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)
 	pc_log->vPrintLine(s_log_message, true);
 	pc_log->vPrintEmptyLine();
 
-#ifdef EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
+#ifdef STEINER_TREE_SET_DYNAMIC
 	CBinarySteinerTreeSetDynamicEvaluation *pc_steiner_tree_set;
 
 	if (pc_steiner_tree_set = dynamic_cast<CBinarySteinerTreeSetDynamicEvaluation*>(pc_problem->pcGetEvaluation()))
@@ -81,10 +81,9 @@ bool CDSMGA2::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)
 		{
 			pc_chromosome = (pc_dsmga2->population + i);
 			pc_chromosome->setEvaluated(false);
-			//pc_dsmga2->pHash[pc_chromosome->getKey()] = pc_chromosome->getFitness();
 		}//for (int i = 0; i < pc_dsmga2->nCurrent; i++)
 	}//if (pc_steiner_tree_set = dynamic_cast<CBinarySteinerTreeSetDynamicEvaluation*>(pc_problem->pcGetEvaluation()))
-#endif//EVALUATION_BINARY_STEINER_TREE_SET_DYNAMIC
+#endif//STEINER_TREE_SET_DYNAMIC
 
 	return b_updated;
 }//bool CDSMGA2::bRunIteration(uint32_t iIterationNumber, time_t tStartTime)

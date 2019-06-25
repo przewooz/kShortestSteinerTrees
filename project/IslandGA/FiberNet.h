@@ -38,6 +38,8 @@ using namespace TimeCounters;
 #define  DEMAND_TYPE_ANYCAST	2
 #define  DEMAND_TYPE_MULTICAST	3
 
+#define  STEINER_TREE_SET_DYNAMIC
+
 
 
 namespace  FiberNets

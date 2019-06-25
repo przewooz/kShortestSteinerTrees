@@ -4537,8 +4537,13 @@ double  CSteinerTreeSet::dGetFuncValue(int  iShift, int  *piArgument,  int  iArg
 	}//if  (v_tree_set.size() > 0)
 
 	double  d_result;
-	//d_result = c_buf.dGetTreeCost();
+	
+#ifdef STEINER_TREE_SET_DYNAMIC
+	d_result = dGetTreeFitness(&c_buf, d_def_fintes, true);
+#else//else #ifdef STEINER_TREE_SET_DYNAMIC
 	d_result = dGetTreeFitness(&c_buf, d_def_fintes, false);
+#endif//#ifdef STEINER_TREE_SET_DYNAMIC
+	
 	d_result = 1.0 / (d_result + 1);
 
 
