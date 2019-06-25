@@ -1,0 +1,4 @@
+us26\ss.net\\net file
+us26\013.dmc\\dmc file
+1000\\tree number
+1\\intelligent tree build
